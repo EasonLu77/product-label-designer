@@ -1,0 +1,273 @@
+{
+  "category": {
+    "label": "Product category",
+    "group": "Product",
+    "type": "enum",
+    "help": "Unknown remains unresolved; select No only when confirmed.",
+    "options": [
+      "Printer",
+      "Kiosk/controller",
+      "Heat press",
+      "Other"
+    ]
+  },
+  "power": {
+    "label": "Power at assessed product input",
+    "group": "Product",
+    "type": "enum",
+    "help": "Unknown remains unresolved; select No only when confirmed.",
+    "options": [
+      "AC",
+      "DC",
+      "AC/DC",
+      "Battery only"
+    ]
+  },
+  "voltage_min": {
+    "label": "Minimum rated input voltage (V)",
+    "group": "Product",
+    "type": "number",
+    "help": "Leave blank if unknown. Assess an external PSU as a separate component/product."
+  },
+  "voltage_max": {
+    "label": "Maximum rated input voltage (V)",
+    "group": "Product",
+    "type": "number",
+    "help": "Leave blank if unknown. Assess an external PSU as a separate component/product."
+  },
+  "current": {
+    "label": "Rated input current (A)",
+    "group": "Product",
+    "type": "number",
+    "help": "Leave blank if unknown. Assess an external PSU as a separate component/product."
+  },
+  "frequency": {
+    "label": "Rated frequency (Hz; 0 for DC)",
+    "group": "Product",
+    "type": "number",
+    "help": "Leave blank if unknown. Assess an external PSU as a separate component/product."
+  },
+  "safety_class": {
+    "label": "Electrical protection class",
+    "group": "Product",
+    "type": "enum",
+    "help": "Unknown remains unresolved; select No only when confirmed.",
+    "options": [
+      "I",
+      "II",
+      "III"
+    ]
+  },
+  "psu": {
+    "label": "PSU arrangement",
+    "group": "Product",
+    "type": "enum",
+    "help": "Unknown remains unresolved; select No only when confirmed.",
+    "options": [
+      "Internal",
+      "External",
+      "None"
+    ]
+  },
+  "environment": {
+    "label": "Use environment",
+    "group": "Product",
+    "type": "enum",
+    "help": "Unknown remains unresolved; select No only when confirmed.",
+    "options": [
+      "Indoor",
+      "Outdoor",
+      "Both"
+    ]
+  },
+  "wifi": {
+    "label": "Wi-Fi",
+    "group": "Features",
+    "type": "boolean",
+    "help": "Unknown remains unresolved; select No only when confirmed."
+  },
+  "bluetooth": {
+    "label": "Bluetooth",
+    "group": "Features",
+    "type": "boolean",
+    "help": "Unknown remains unresolved; select No only when confirmed."
+  },
+  "cellular": {
+    "label": "Cellular",
+    "group": "Features",
+    "type": "boolean",
+    "help": "Unknown remains unresolved; select No only when confirmed."
+  },
+  "battery": {
+    "label": "Battery present",
+    "group": "Features",
+    "type": "boolean",
+    "help": "Unknown remains unresolved; select No only when confirmed."
+  },
+  "laser": {
+    "label": "Laser present",
+    "group": "Features",
+    "type": "boolean",
+    "help": "Unknown remains unresolved; select No only when confirmed."
+  },
+  "display": {
+    "label": "Built-in display",
+    "group": "Features",
+    "type": "boolean",
+    "help": "Unknown remains unresolved; select No only when confirmed."
+  },
+  "rfid": {
+    "label": "RFID / NFC implementation",
+    "group": "Features",
+    "type": "enum",
+    "help": "Unknown remains unresolved; select No only when confirmed.",
+    "options": [
+      "None",
+      "Passive tag only",
+      "Reader/writer",
+      "Active tag"
+    ]
+  },
+  "digital": {
+    "label": "Digital timing / processing >= 9 kHz",
+    "group": "Features",
+    "type": "boolean",
+    "help": "Unknown remains unresolved; select No only when confirmed."
+  },
+  "emc_class": {
+    "label": "Verified EMC class",
+    "group": "Features",
+    "type": "enum",
+    "help": "EMC Class A/B is separate from electrical protection Class I/II/III.",
+    "options": [
+      "A",
+      "B"
+    ]
+  },
+  "ca_ices_scope": {
+    "label": "ICES-003 scope confirmed (including exemptions)",
+    "group": "Canada",
+    "type": "boolean",
+    "help": "Unknown remains unresolved; select No only when confirmed."
+  },
+  "ca_label_mandatory": {
+    "label": "ICES-003 label mandatory for this assessed item",
+    "group": "Canada",
+    "type": "boolean",
+    "help": "Unknown remains unresolved; select No only when confirmed."
+  },
+  "ca_radio_scope": {
+    "label": "ISED radio certification scope confirmed",
+    "group": "Canada",
+    "type": "boolean",
+    "help": "Unknown remains unresolved; select No only when confirmed."
+  },
+  "au_label_scope": {
+    "label": "Applicable ACMA notice requires compliance label",
+    "group": "Australia",
+    "type": "boolean",
+    "help": "Unknown remains unresolved; select No only when confirmed."
+  },
+  "au_eess_scope": {
+    "label": "EESS in-scope equipment confirmed",
+    "group": "Australia",
+    "type": "boolean",
+    "help": "Unknown remains unresolved; select No only when confirmed."
+  },
+  "eu_red_scope": {
+    "label": "RED scope confirmed, including exclusions",
+    "group": "European Union",
+    "type": "boolean",
+    "help": "Unknown remains unresolved; select No only when confirmed."
+  },
+  "eu_emc_scope": {
+    "label": "EMC Directive scope confirmed",
+    "group": "European Union",
+    "type": "boolean",
+    "help": "Unknown remains unresolved; select No only when confirmed."
+  },
+  "eu_rohs_scope": {
+    "label": "RoHS scope confirmed",
+    "group": "European Union",
+    "type": "boolean",
+    "help": "Unknown remains unresolved; select No only when confirmed."
+  },
+  "eu_lvd_excluded": {
+    "label": "Excluded from LVD or governed by overriding legislation",
+    "group": "European Union",
+    "type": "boolean",
+    "help": "Unknown remains unresolved; select No only when confirmed."
+  },
+  "eu_weee_scope": {
+    "label": "WEEE scope confirmed",
+    "group": "European Union",
+    "type": "boolean",
+    "help": "Unknown remains unresolved; select No only when confirmed."
+  },
+  "us_part15_scope": {
+    "label": "Part 15 labeling scope confirmed",
+    "group": "United States",
+    "type": "boolean",
+    "help": "Unknown remains unresolved; select No only when confirmed."
+  },
+  "ar_radio_scope": {
+    "label": "Argentina radio authorization scope confirmed",
+    "group": "Argentina",
+    "type": "boolean",
+    "help": "Unknown remains unresolved; select No only when confirmed."
+  },
+  "ar_safety_scope": {
+    "label": "Argentina electrical safety scope confirmed",
+    "group": "Argentina",
+    "type": "boolean",
+    "help": "Unknown remains unresolved; select No only when confirmed."
+  },
+  "mx_radio_scope": {
+    "label": "Mexico radio homologation scope confirmed",
+    "group": "Mexico",
+    "type": "boolean",
+    "help": "Unknown remains unresolved; select No only when confirmed."
+  },
+  "mx_nom_scope": {
+    "label": "Applicable NOM labeling scope confirmed",
+    "group": "Mexico",
+    "type": "boolean",
+    "help": "Unknown remains unresolved; select No only when confirmed."
+  },
+  "us_authorization": {
+    "label": "US authorization route for assessed equipment",
+    "group": "United States",
+    "type": "enum",
+    "help": "Unknown remains unresolved; select No only when confirmed.",
+    "options": [
+      "SDoC",
+      "Certification",
+      "Certified module host",
+      "Exempt"
+    ]
+  },
+  "module_hidden": {
+    "label": "Certified module label not visible in host",
+    "group": "Features",
+    "type": "boolean",
+    "help": "Unknown remains unresolved; select No only when confirmed."
+  },
+  "ca_elabel_eligible": {
+    "label": "ICES-Gen Annex B e-label conditions satisfied",
+    "group": "Canada",
+    "type": "boolean",
+    "help": "Unknown remains unresolved; select No only when confirmed."
+  },
+  "au_elabel_eligible": {
+    "label": "Applicable ACMA e-label conditions satisfied",
+    "group": "Australia",
+    "type": "boolean",
+    "help": "Unknown remains unresolved; select No only when confirmed."
+  },
+  "small_label_exception": {
+    "label": "Physical label impractical; exception documented",
+    "group": "Features",
+    "type": "boolean",
+    "help": "Unknown remains unresolved; select No only when confirmed."
+  }
+}

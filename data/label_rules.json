@@ -1,0 +1,401 @@
+{
+  "version": "0.4.0",
+  "purpose": "Layout suggestions only; independent from the legal assessment rules. All generated labels are drafts.",
+  "items": [
+    {
+      "id": "CE",
+      "title": "CE",
+      "markets": [
+        "EU"
+      ],
+      "when": {
+        "any": [
+          {
+            "field": "digital",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "any": [
+              {
+                "field": "wifi",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "bluetooth",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "cellular",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "rfid",
+                "op": "in",
+                "value": [
+                  "Reader/writer",
+                  "Active tag"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "kind": "symbol",
+      "content": "ce",
+      "reference": "https://single-market-economy.ec.europa.eu/single-market/goods/ce-marking_en",
+      "note": "依一般電子產品配置建議；仍須確認適用的 EU 法規與符合性文件。",
+      "last_reviewed_on": null,
+      "rule_status": "draft",
+      "default_include": true,
+      "domains": [
+        "EMC",
+        "Safety",
+        "Radio"
+      ],
+      "official_artwork_url": "https://single-market-economy.ec.europa.eu/single-market/goods/ce-marking_en",
+      "regulation": "適用 EU harmonisation legislation 待核對",
+      "template_text": false
+    },
+    {
+      "id": "WEEE",
+      "title": "WEEE 垃圾桶",
+      "markets": [
+        "EU"
+      ],
+      "when": {
+        "any": [
+          {
+            "field": "digital",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "any": [
+              {
+                "field": "wifi",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "bluetooth",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "cellular",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "rfid",
+                "op": "in",
+                "value": [
+                  "Reader/writer",
+                  "Active tag"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "kind": "symbol",
+      "content": "weee",
+      "reference": "https://europa.eu/youreurope/business/product-rules-compliance/recycling-waste-management/weee-label/index_en.htm",
+      "note": "確認 EEE 範圍與排除項目；含下方日期識別橫槓。",
+      "last_reviewed_on": null,
+      "rule_status": "draft",
+      "default_include": true,
+      "domains": [
+        "Environmental"
+      ],
+      "official_artwork_url": "https://europa.eu/youreurope/business/images/symbols/WEEE_symbol.svg",
+      "regulation": "Directive 2012/19/EU（適用範圍待核對）",
+      "template_text": false
+    },
+    {
+      "id": "RCM",
+      "title": "RCM",
+      "markets": [
+        "AU"
+      ],
+      "when": {
+        "any": [
+          {
+            "field": "digital",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "any": [
+              {
+                "field": "wifi",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "bluetooth",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "cellular",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "rfid",
+                "op": "in",
+                "value": [
+                  "Reader/writer",
+                  "Active tag"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "kind": "symbol",
+      "content": "rcm",
+      "reference": "https://www.acma.gov.au/step-5-label-your-product",
+      "note": "確認適用 ACMA notice、供應商與符合性資料；不以澳洲市場選項單獨判定。",
+      "last_reviewed_on": null,
+      "rule_status": "draft",
+      "default_include": true,
+      "domains": [
+        "EMC",
+        "Radio"
+      ],
+      "official_artwork_url": "",
+      "regulation": "適用 ACMA labelling notice 待核對",
+      "template_text": false
+    },
+    {
+      "id": "ICES",
+      "title": "CAN ICES-003",
+      "markets": [
+        "CA"
+      ],
+      "when": {
+        "field": "digital",
+        "op": "eq",
+        "value": true
+      },
+      "kind": "text",
+      "content": "CAN ICES-003({emc_class}) / NMB-003({emc_class})",
+      "reference": "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/devices-and-equipment/interference-causing-equipment-standards-ices/ices-003-information-technology-equipment-including-digital-apparatus",
+      "note": "數位電路配置候選；產品類別僅為備註，不參與判斷。請核對 ICES-003 範圍、排除项目及最終標示。",
+      "last_reviewed_on": null,
+      "rule_status": "draft",
+      "default_include": true,
+      "domains": [
+        "EMC"
+      ],
+      "official_artwork_url": "",
+      "regulation": "ICES-003 / ICES-Gen（適用範圍待核對）",
+      "template_text": true
+    },
+    {
+      "id": "CLASS-II",
+      "title": "Class II 雙重絕緣",
+      "markets": [
+        "US",
+        "CA",
+        "EU",
+        "AU"
+      ],
+      "when": {
+        "field": "safety_class",
+        "op": "eq",
+        "value": "II"
+      },
+      "kind": "symbol",
+      "content": "class_ii",
+      "reference": "https://www.iec.ch/",
+      "note": "圖示草稿；先確認整機 Class II 分類與適用安全標準的 marking clause。外接 Class II PSU 不代表整機分類相同。",
+      "last_reviewed_on": null,
+      "rule_status": "draft",
+      "default_include": true,
+      "domains": [
+        "Safety"
+      ],
+      "official_artwork_url": "",
+      "regulation": "",
+      "template_text": false
+    },
+    {
+      "id": "US-DOC",
+      "title": "US FCC 文件資訊",
+      "markets": [
+        "US"
+      ],
+      "when": {
+        "any": [
+          {
+            "field": "digital",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "any": [
+              {
+                "field": "wifi",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "bluetooth",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "cellular",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "rfid",
+                "op": "in",
+                "value": [
+                  "Reader/writer",
+                  "Active tag"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "kind": "task",
+      "content": "",
+      "reference": "https://www.ecfr.gov/current/title-47/section-2.1077",
+      "note": "確認 SDoC / Certification 路徑、Part 15 statement 與文件位置。此草稿不因選美國就自動加入 FCC logo。",
+      "last_reviewed_on": null,
+      "rule_status": "draft",
+      "default_include": false,
+      "domains": [
+        "EMC"
+      ],
+      "official_artwork_url": "",
+      "regulation": "",
+      "template_text": false
+    },
+    {
+      "id": "BATTERY",
+      "title": "電池標示",
+      "markets": [
+        "US",
+        "CA",
+        "EU",
+        "AU"
+      ],
+      "when": {
+        "field": "battery",
+        "op": "eq",
+        "value": true
+      },
+      "kind": "task",
+      "content": "",
+      "reference": "https://eur-lex.europa.eu/eli/reg/2023/1542/oj",
+      "note": "電池種類與運輸配置尚未建模，未自動加入電池或危險品圖示。",
+      "last_reviewed_on": null,
+      "rule_status": "draft",
+      "default_include": false,
+      "domains": [
+        "Environmental"
+      ],
+      "official_artwork_url": "",
+      "regulation": "",
+      "template_text": false
+    },
+    {
+      "id": "LASER",
+      "title": "雷射標示",
+      "markets": [
+        "US",
+        "CA",
+        "EU",
+        "AU"
+      ],
+      "when": {
+        "field": "laser",
+        "op": "eq",
+        "value": true
+      },
+      "kind": "task",
+      "content": "",
+      "reference": "https://www.fda.gov/radiation-emitting-products/laser-products-and-instruments",
+      "note": "需確認可接觸雷射等級、波長、輸出及各市場要求，未自動加入通用雷射警告。",
+      "last_reviewed_on": null,
+      "rule_status": "draft",
+      "default_include": false,
+      "domains": [
+        "Safety"
+      ],
+      "official_artwork_url": "",
+      "regulation": "",
+      "template_text": false
+    },
+    {
+      "id": "RFID-PASSIVE",
+      "title": "被動 RFID 適用性",
+      "markets": [
+        "US",
+        "CA",
+        "EU",
+        "AU"
+      ],
+      "when": {
+        "field": "rfid",
+        "op": "eq",
+        "value": "Passive tag only"
+      },
+      "kind": "task",
+      "content": "",
+      "reference": "https://www.ecfr.gov/current/title-47/part-15",
+      "note": "被動 tag 不自動等同 Wi-Fi transmitter；確認各國排除與適用性。",
+      "last_reviewed_on": null,
+      "rule_status": "draft",
+      "default_include": false,
+      "domains": [
+        "Radio"
+      ],
+      "official_artwork_url": "",
+      "regulation": "",
+      "template_text": false
+    },
+    {
+      "id": "OUTDOOR",
+      "title": "戶外使用標示",
+      "markets": [
+        "US",
+        "CA",
+        "EU",
+        "AU"
+      ],
+      "when": {
+        "field": "environment",
+        "op": "in",
+        "value": [
+          "Outdoor",
+          "Both"
+        ]
+      },
+      "kind": "task",
+      "content": "",
+      "reference": "https://www.iec.ch/",
+      "note": "IP 等級及環境額定資訊需要實際設計／試驗資料，未由戶外選項推定。",
+      "last_reviewed_on": null,
+      "rule_status": "draft",
+      "default_include": false,
+      "domains": [
+        "Safety"
+      ],
+      "official_artwork_url": "",
+      "regulation": "",
+      "template_text": false
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "version": "0.8",
+  "safety": {
+    "I": null,
+    "II": {
+      "title": "Class II",
+      "kind": "symbol",
+      "content": "class_ii",
+      "reference": "https://www.iso.org/obp/ui/#iec:grs:60417:5172",
+      "note": "IEC 60417-5172，圖示草稿。"
+    },
+    "III": {
+      "title": "Class III",
+      "kind": "symbol",
+      "content": "class_iii",
+      "reference": "https://www.iso.org/obp/ui/#iec:grs:60417:5180",
+      "note": "IEC 60417-5180，圖示草稿。"
+    }
+  },
+  "emc": {
+    "market": "CA",
+    "template": "CAN ICES-003({emc_class}) / NMB-003({emc_class})",
+    "reference": "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/devices-and-equipment/interference-causing-equipment-standards-ices/ices-003-information-technology-equipment-including-digital-apparatus",
+    "note": "ICES-003 §4.2。此連動以使用者已確認 ICES-003 適用為前提，不評估產品範圍。"
+  },
+  "radio": [
+    {
+      "market": "US",
+      "field": "fcc_id",
+      "prefix": "FCC ID: ",
+      "module_prefix": "Contains FCC ID: ",
+      "reference": "https://www.ecfr.gov/current/title-47/section-15.212"
+    },
+    {
+      "market": "CA",
+      "field": "ic_id",
+      "prefix": "IC: ",
+      "module_prefix": "Contains IC: ",
+      "reference": "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/devices-and-equipment/radio-equipment-standards/radio-standards-specifications-rss/rss-gen-general-requirements-compliance-radio-apparatus"
+    }
+  ]
+}

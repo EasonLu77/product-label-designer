@@ -1,0 +1,56 @@
+{
+  "version": "0.7",
+  "items": [
+    {
+      "id": "CE",
+      "title": "CE",
+      "markets": [
+        "EU"
+      ],
+      "kind": "symbol",
+      "content": "ce",
+      "reference": "https://single-market-economy.ec.europa.eu/single-market/goods/ce-marking_en",
+      "note": "依一般電子產品配置建議；仍須確認適用的 EU 法規與符合性文件。",
+      "official_artwork_url": "https://single-market-economy.ec.europa.eu/single-market/goods/ce-marking_en",
+      "regulation": "適用 EU harmonisation legislation 待核對",
+      "domains": [
+        "EMC",
+        "Safety",
+        "RF"
+      ]
+    },
+    {
+      "id": "WEEE",
+      "title": "WEEE 垃圾桶",
+      "markets": [
+        "EU"
+      ],
+      "kind": "symbol",
+      "content": "weee",
+      "reference": "https://europa.eu/youreurope/business/product-rules-compliance/recycling-waste-management/weee-label/index_en.htm",
+      "note": "確認 EEE 範圍與排除項目；含下方日期識別橫槓。",
+      "official_artwork_url": "https://europa.eu/youreurope/business/images/symbols/WEEE_symbol.svg",
+      "regulation": "Directive 2012/19/EU（適用範圍待核對）",
+      "domains": [
+        "Environmental"
+      ]
+    },
+    {
+      "id": "RCM",
+      "title": "RCM",
+      "markets": [
+        "AU"
+      ],
+      "kind": "symbol",
+      "content": "rcm",
+      "reference": "https://www.acma.gov.au/step-5-label-your-product",
+      "note": "確認適用 ACMA notice、供應商與符合性資料；不以澳洲市場選項單獨判定。",
+      "official_artwork_url": "",
+      "regulation": "適用 ACMA labelling notice 待核對",
+      "domains": [
+        "EMC",
+        "RF"
+      ]
+    }
+  ]
+}
