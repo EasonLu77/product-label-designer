@@ -3,7 +3,7 @@
 ## 網頁版部署
 
 程式入口為儲存庫根目錄的 `app.py`。Streamlit Community Cloud 設定與本機啟動方式見 [DEPLOYMENT.md](DEPLOYMENT.md)。
-
+App: https://easonlu77-label-designer.streamlit.app/
 ## 本版版面
 
 左欄各區塊同寬，依序為：專案存檔／讀取、① 產品資訊、② 功能規格、③ 目標市場、排版／配色與大小、marking 來源。
